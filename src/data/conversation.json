@@ -1,0 +1,54 @@
+[
+  {
+    "postID": 1,
+    "postText": "This is message 1.",
+    "postType": "bot",
+    "postButtons": [
+      { 
+        "name": "Hello",
+        "link": "home"
+      },
+      { 
+        "name": "There",
+        "link": "about"
+      }
+    ]
+  },
+  {
+    "postID": 2,
+    "postText": "This is message 2.",
+    "postType": "cust",
+    "postButtons": [
+      { 
+        "name": "My",
+        "link": "home"
+      },
+      { 
+        "name": "Old",
+        "link": "about"
+      },
+      { 
+        "name": "Friend",
+        "link": "about"
+      }
+    ]
+  },
+  {
+    "postID": 3,
+    "postText": "This is message 3.",
+    "postType": "bot",
+    "postButtons": [
+      { 
+        "name": "Boop",
+        "link": "home"
+      }
+    ]
+  },
+  {
+    "postID": 4,
+    "postText": "Just a message.",
+    "postType": "cust",
+    "postButtons": [
+    ]
+  }
+]
