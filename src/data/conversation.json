@@ -1,7 +1,16 @@
 [
   {
     "postID": 1,
-    "postText": "This is message 1.",
+    "postTime": "12:21 PM",
+    "postText": "Manage My Trips",
+    "postType": "cust",
+    "postButtons": [
+    ]
+  },
+  {
+    "postID": 2,
+    "postTime": "12:22 PM",
+    "postText": "Alright! Lets look up your trip. Please enter your email address or phone number that was used to book your trip.",
     "postType": "bot",
     "postButtons": [
       { 
@@ -15,27 +24,17 @@
     ]
   },
   {
-    "postID": 2,
-    "postText": "This is message 2.",
+    "postID": 3,
+    "postTime": "12:23 PM",
+    "postText": "Travtrav@gmail.com",
     "postType": "cust",
     "postButtons": [
-      { 
-        "name": "My",
-        "link": "home"
-      },
-      { 
-        "name": "Old",
-        "link": "about"
-      },
-      { 
-        "name": "Friend",
-        "link": "about"
-      }
     ]
   },
   {
-    "postID": 3,
-    "postText": "This is message 3.",
+    "postID": 4,
+    "postTime": "12:24 PM",
+    "postText": "Thanks! For security reasons, please enter the itinerary number, or the last 4 digits of the credit card used during booking.",
     "postType": "bot",
     "postButtons": [
       { 
@@ -45,7 +44,8 @@
     ]
   },
   {
-    "postID": 4,
+    "postID": 5,
+    "postTime": "12:25 PM",
     "postText": "Just a message.",
     "postType": "cust",
     "postButtons": [
