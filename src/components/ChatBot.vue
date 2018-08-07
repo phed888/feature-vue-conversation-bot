@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="card convo-card" v-for="(conversation, index) in conversations" :key="index" v-bind:class="conversation.postType">
+      <div class="time-stamp">{{ conversation.postTime }}</div>
+      <div class="brand-logo"></div>
       <div class="card-body">
         <p class="card-text">{{ conversation.postText }}</p>
         <router-link 
@@ -30,28 +32,58 @@ export default {
 
 <style>
 .convo-card {
-  margin-bottom: 20px;
+  margin: 30px 0 20px;
   border-radius: 13px;
-  font-weight: 700;
+  font-weight: 300;
   padding: 0;
+  position: relative;
+}
+.convo-card.bot {
+  margin-left: 40px;
+  margin-right: 20%;
+}
+.convo-card.cust {
+  margin-left: 25%;
+}
+.convo-card .time-stamp {
+  font-size: 12px;
+  color: #999999;
+  position: absolute;
+  top: -22px;
+}
+.convo-card.bot .time-stamp::before {
+  content: 'Expedia.com '
+}
+.convo-card.cust .time-stamp {
+  right: 0;
+}
+.bot .brand-logo {
+  position: absolute;
+  background-image: url("../assets/logo-expedia.png");
+  height: 32px;
+  width: 32px;
+  top: 0;
+  left: -40px;
 }
 .convo-card > .card-body {
   padding: 2px;
+  text-align: left;
 }
 .convo-card > .card-body > .card-text {
   padding: 16px;
+  line-height: 21px;
   margin-bottom: 0;
 }
 .bot {
   background-color: #eaeaea;
   border: 1px solid #DFDFDF;
   color: #222;
-  text-align: left
+  
 }
 .cust {
   background-color: #02345F;
   color: white;
-  text-align: left
+  
 }
 .btn-chat {
   border: none;
